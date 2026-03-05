@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Sign Up</title>
      <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../src/style.css">
 </head>
@@ -26,33 +26,43 @@
           <body>
 
        <section><!--Login Card-->
-        <h1><i class="fa-solid fa-droplet"></i><br><b>Welcome Back</b></h1>
-        <p>Sign in to your WHITE WATER WELLS account</p>
+        <h1><i class="fa-solid fa-droplet"></i><br><b>Create Account</b></h1>
+        <p>Join WHITE WATER WELLS LTD today</p>
       </section>
- 
-<section>
-    <form action="">
+
+      <form action="">
+        <i class="fa-regular fa-user"></i>
+        <label for="full-name">Full Name</label><br>
+        <input type="text" id="full-name" placeholder="Kofi Owusu" name="full-name" required><br><br>
+
         <i class="fa-regular fa-envelope"></i>
         <label for="email">Email Address</label><br>
-        <input type="email" id="email" placeholder="you@example.com" name="email" required><br>
-        <br>
+        <input type="email" id="email" placeholder="kofiowusu@gmail.com" name="email" required><br><br>
+
+        <i class="fa-solid fa-phone"></i>
+        <label for="phone">Phone Number</label><br>
+        <input type="text" id="phone" placeholder="+233 245 678 901" name="phone" required><br>
 
         <i class="fa-solid fa-lock"></i>
-        <label for="password">Password</label>
-        <a href="#">Forgot Password?</a><br>
-        <input type="password" id="password" placeholder="..........." name="password" required>
-        <br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" placeholder="..........." name="password" required><p>Must be at least 8 characters</p>
+
+         <i class="fa-solid fa-lock"></i>
+        <label for="confirm-password">Confirm Password</label><br>
+        <input type="password" id="confirm-password" placeholder="..........." name="confirm-password" required><br>
 
         <input type="checkbox">
-        <label for="remember">Remember Me</label><br>
-        
-        <button type="submit">Sign In</button>
-        <p>Don't have an account? <a href="../pages/sign.html">Sign up now</a></p>
-    </form>
+        <label for="remember">I agree to the Terms of Service and Privacy Policy</label><br>
 
-</section>    
-</body>
-<p>By signing in, you agree to our Terms of Service and Privacy Policy</p>
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="../pages/login.html">Sign In</a></p>
+      </form>
+
+   <section>
+    <p>Benefits of creating an account: Track orders, save delivery<br>addresses, manage subscriptions, and get exclusive offers!</p>
+   </section>
+  </body>
+
 <footer>
 
     <h1><img src="../images/home-page-images/Final logo.jpg" alt="Logo" width="100" height="100">WHITE WATER WELLS LTD</h1>

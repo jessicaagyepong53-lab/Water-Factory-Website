@@ -20,38 +20,108 @@
         <a href="../pages/certificates&quality.html">Certificates</a>
         <a href="../pages/order.html">Order Now</a>
         <a href="../pages/login.html">Login</a>
+        <a href="../pages/sign.html">Sign Up</a>
        </Nav>
-</header>
+       </header>
 
- <section><!--Backgroubd image banner-->
-    <p><i class="fa-solid fa-cart-shopping"></i><br><b>Order Now</b><br>Fill out the form below to place your order</p>
-    <img src="../images/home-page-images/background header.jpeg" alt="" width="100" height="100">
+       <section><!--Backgroubd image banner-->
+        <p><i class="fa-solid fa-cart-shopping"></i><br><b>Order Now</b><br>Fill out the form below to place your order</p>
+        <img src="../images/home-page-images/background header.jpeg" alt="" width="100" height="100">
 </section>
-    
+
+    <body>
+
 <section>
+
     <h2><i class="fa-regular fa-user"></i>Personal Information</h2>
+
     <form>
         <form action="">
-        <label for="full-name">First Name:</label> <br>
-        <input type="text" id="full-name" placeholder="Jessica Agyepong" name="full-name"> <br>
-        <label for="telp">Telephone:</label> <br>
-        <input type="text" id="telp" placeholder="0245678901" name="telp"> <br>
-        <label for="email">Email:</label> <br>
-        <input type="email" id="email" placeholder="jessica@example.com" name="email"> <br>
+        <label for="full-name">First Name*</label><br>
+        <input type="text" id="full-name" placeholder="Kofi Owusu" name="full-name" required>
+
+        <label for="telp">Phone Number*</label>
+        <input type="text" id="telp" placeholder="0245678901" name="telp" required><br>
+
+        <label for="email">Email Address*</label> <br>
+        <input type="email" id="email" placeholder="kofiowusu@gmail.com" name="email" required><br>
         
         <h2><i class="fa-solid fa-location-dot"></i>Delivery Address</h2>
-        <label for="Street Name">Street Name:</label> <br>
-        <input type="text" id="Street Name" placeholder="123 Main St" name="Street Name"> <br>
-        <label for="City">City:</label> <br>
-        <input type="text" id="City" placeholder="Accra" name="City"> <br>
-        <label for="GPS">GPS Address:</label> <br>
-        <input type="text" id="GPS" placeholder=" GBC-453-225" name="GPS"> <br>
 
-       
-        <button type="submit">Submit Order</button>
-    </form>
+        <label for="Street Address">Street Address*</label><br>
+        <input type="text" id="Street Address" placeholder="123 Main St" name="Street Address" required><br>
+
+        <label for="City">City*</label><br>
+        <input type="text" id="City" placeholder="Accra" name="City" required>
+        <label for="GPS">GPS Address*</label>
+        <input type="text" id="GPS" placeholder=" GBC-453-225" name="GPS" required><br>
+
+        <h2><i class="fa-solid fa-cart-shopping"></i>Order Details</h2>
+
+        <label for="Select Product">Select Product*</label><br>
+        <select id="Select Product" name="Select Product" required>
+            <option value="">--Choose a product...--</option>
+            <option value="Product 1">Sachet Water - 500ml (GH₵7)</option>
+            <option value="Product 2"></option>
+            <option value="Product 3"></option><br>
+        </select><br>
+
+            <Label for="Quantity">Quantity*</Label><br>
+            <input type="number" id="quantity" placeholder="1" name="quantity" min="1" max="100,000" required><br>
+
+            <Label for="Order Type">Order Type*</Label><br>
+        <select id="Order Type" name="Order Type" required>
+            <option value="">--One-time purchase--</option>
+            <option value="One-Time Purchase">One-time purchase</option>
+            <option value="Weekly Subscription">Weekly Subscription (Save 10%)</option>
+            <option value="Bi-Weekly Subscription">Bi-Weekly Subscription (Save 15%)</option>
+             <option value="Monthly Subscription">Monthly Subscription (Save 20%)</option>
+        </select><br>
+
+        <h2><i class="fa-regular fa-calendar"></i>Delivery Schedule</h2>
+        <label for="Preferred Delivery Date">Preferred Delivery Date*</label><br>
+        <input type="date" id="Preferred Delivery Date" name="Preferred Delivery Date" required><br>
+
+        <label for="Preferred Time Slot">Preferred Time Slot*</label><br>
+        <select id="Preferred Time Slot" name="Preferred Time Slot" required>
+            <option value="">--Select a time slot...--</option>
+            <option value="Morning">Morning (8am - 12pm)</option>
+            <option value="Afternoon">Afternoon (12pm - 4pm)</option>
+            <option value="Evening">Evening (4pm - 8pm)</option>
+        </select><br>
+
+        <label for="Special Instructions (Optional)">Special Instructions (Optional)</label><br>
+        <textarea id="Special Instructions (Optional)" name="Special Instructions (Optional)" placeholder="Any special instructions, house number, etc.?" cols="80" rows="10"></textarea>
+
+       </form>
 </section>
-<body>
-    
+
+   <section>
+    <h4><Button>Place Order</Button> </h4>
+    <p>By placing an order, you agree to our terms and conditions. We'll contact you to confirm your order and arrange payment.</p>
+   </section>
+
+   <section>
+    <h3>Need Help with Your Order?</h3>
+    <p><b>Call Us</b><br><i class="fa-solid fa-phone"></i>Phone: +233 243 108 878 / +233 244 483 793<br>Available: Monday's-Saturday's, 8AM - 8PM</p>
+    <p><br><i class="fa-solid fa-envelope"></i>Email Us<br>whitewaterwellscompanyltd@gmail.com<br>We'll respond within 24 hours</p>
+   </section>
 </body>
+
+<footer>
+
+    <h1><img src="../images/home-page-images/Final logo.jpg" alt="Logo" width="100" height="100">WHITE WATER WELLS LTD</h1>
+    <p>Pure Water, Pure Life</p>
+
+<h2><u>Quick Links</u></h2>
+<p><a href="../index.html">Home</a><br><a href="../pages/about.html">About Us</a><br><a href="../pages/products.html">Products</a><br><a href="../pages/services.html">Services</a><br><a href="../pages/certification&quality.html">Certificates</a><br><a href="../pages/order.html">Order Now</a><br><a href="../pages/login.html">Login</a><br><a href="../pages/sign.html">Sign Up</a></p>
+
+<h3> <u>Services</u></h3>
+<p>Delivery<br>Wholesale<br>Retail</p>
+
+<h4> <u>Contact Info</u></h4>
+<p><i class="fa-solid fa-location-dot"></i>Comm 25 Peace B Down,Accra-Prampram Road,P.O. Box 18204,Accra<br><i class="fa-solid fa-map-location-dot"></i>GPS: GN-0709-4736<br><i class="fa-solid fa-phone"></i>Phone: +233 243 108 878 / +233 244 483 793<br><i class="fa-solid fa-envelope"></i>Email:whitewaterwellscompanyltd@gmail.com</p>
+<hr><p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD.</p>
+
+  </footer>
 </html>
