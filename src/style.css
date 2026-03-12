@@ -1,0 +1,113 @@
+/* Dropdown Container */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+/* Dropdown Button */
+.dropbtn{
+    background-color: transparent;
+    color: rgba(26, 193, 222);
+    padding: 10px 20px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* Dropdown Content */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: white
+    z-index: 1;
+}
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Dropdown Links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of nav links on hover */
+.nav-link:hover {
+    bo
+    background-color: rgb(140, 133, 133);
+}
+/* Nav Link Styles */
+.nav-link{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: white;
+}
+/* Logo */
+.logo h2{
+    margin: auto 10px;
+    font-size: 20px;
+}
+.logo p{
+    margin: auto 10px;
+    font-size: 10px;
+    color: rgb(211, 222, 223);
+}
+nav a{
+    margin: auto 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: rgb(21, 136, 164);
+}
+
+/* Hero Section */
+.hero{
+    height: auto;
+    background-image: url('../images/home-page-images/background header.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-text p{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.hero-buttons button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: rgba(26, 193, 222);
+    color: white;
+}
