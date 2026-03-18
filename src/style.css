@@ -1278,7 +1278,7 @@ img { max-width: 100%; display: block; }
     padding: 50px 24px;
   }
  
-.contact-row {
+  .contact-row {
     flex-direction: column;
     align-items: center;
   }
@@ -1287,6 +1287,7 @@ img { max-width: 100%; display: block; }
     max-width: 100%;
     width: 100%;
   }
+}
 /* ============================================
    AUTH PAGES (Login & Sign Up)
    ============================================ */
