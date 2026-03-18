@@ -1,3 +1,4 @@
+// Bulk-purchase automation
 document.getElementById('product').addEventListener('change', function() {
       if (this.value === 'bulk-purchase') {
         document.getElementById('quantity').value = 1000;
