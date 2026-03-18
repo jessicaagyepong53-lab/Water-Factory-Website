@@ -1,134 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order-Now</title>
-    <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now</title>
+  <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/src/style.css">
 </head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <section class="navbar">
+      <div class="nav-brand">
+        <img src="/images/home-page-images/Final logo.jpg" alt="Logo">
+        <div>
+          <h1>WHITE WATER WELLS LTD</h1>
+          <p>Pure Water, Pure Life</p>
+        </div>
+      </div>
+      <nav class="navlink">
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/certification&quality.html">Certificates</a>
+        <a href="/pages/order.html">Order Now</a>
 
-<header> <!---Contaier-->
-<div class="navbar"> <!---Contaier-->
+        <!-- My Account Dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <i class="fa-regular fa-circle-user"></i> My Account
+            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="/pages/login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            <a href="/pages/sign.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-  <div class="logo">
-   <img src="../images/home-page-images/Final logo.jpg" alt="" width="100" height="100">
-    <div class="logo-text">
-      <h1>WHITE WATER WELLS LTD</h1>
-      <p>Pure Water. Pure Life. Trusted Quality.</p>
-    </div>
-    </div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h1>Order Now</h1>
+        <p>Fill out the form below to place your order</p>
+      </div>
+    </section>
+  </header>
+
+  <!-- Order Form -->
+   <section id="order">
+    <section id="Place-order">
+        <section id="place-your-order">
+            <section id="need-help">
+  <section class="order-section">
+    <div class="order-form-container">
+
+      <form action="" method="POST">
+
+        <!-- Personal Information -->
+        <div class="form-group-title">
+          <i class="fa-regular fa-user"></i>
+          <h2>Personal Information</h2>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="full-name">First Name*</label>
+            <input type="text" id="full-name" placeholder="Kofi Owusu" name="full-name" required>
+          </div>
+          <div class="form-group">
+            <label for="telp">Phone Number*</label>
+            <input type="text" id="telp" placeholder="0245678901" name="telp" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address*</label>
+          <input type="email" id="email" placeholder="kofiowusu@gmail.com" name="email" required>
+        </div>
+
+        <!-- Delivery Address -->
+        <div class="form-group-title">
+          <i class="fa-solid fa-location-dot"></i>
+          <h2>Delivery Address</h2>
+        </div>
+
+        <div class="form-group">
+          <label for="street-address">Street Address*</label>
+          <input type="text" id="street-address" placeholder="123 Main St" name="street-address" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City*</label>
+            <input type="text" id="city" placeholder="Accra" name="city" required>
+          </div>
+          <div class="form-group">
+            <label for="gps">GPS Address*</label>
+            <input type="text" id="gps" placeholder="GBC-453-225" name="gps" required>
+          </div>
+        </div>
+
+        <!-- Order Details -->
+        <div class="form-group-title">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h2>Order Details</h2>
+        </div>
+
+        <div class="form-group">
+          <label for="product">Select Product*</label>
+          <select id="product" name="product" required>
+            <option value="">-- Choose a product --</option>            
+            <option value="sachet-water">Sachet Water - 500ml (GH₵7 per bag)</option>
+            <option value="bulk-purchase">Sachet Water - Bulk purchase (GH₵7 per bag)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="quantity">Quantity*</label>
+            <input type="number" id="quantity" placeholder="1" name="quantity" min="1" required>
+          </div>
+          <div class="form-group">
+            <label for="order-type">Order Type*</label>
+            <select id="order-type" name="order-type" required>
+              <option value="">-- Select order type --</option>
+              <option value="one-time">One-Time Purchase</option>
+              <option value="weekly">Weekly Subscription (Save 10%)</option>
+              <option value="biweekly">Bi-Weekly Subscription (Save 15%)</option>
+              <option value="monthly">Monthly Subscription (Save 20%)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Delivery Schedule -->
+        <div class="form-group-title">
+          <i class="fa-regular fa-calendar"></i>
+          <h2>Delivery Schedule</h2>
+        </div>
+        </section>
+        </section>
+        </section>
+        </section>
         
-       <Nav>
-        <a href="../index.html">Home</a>
-        <a href="../pages/about.html">About Us</a>
-        <a href="../pages/products.html">Products</a>
-        <a href="../pages/services.html">Services</a>
-        <a href="../pages/certificates&quality.html">Certificates</a>
-        <a href="../pages/order.html">Order Now</a>
-        <a href="../pages/login.html">Login</a>
-        <a href="../pages/sign.html">Sign Up</a>
-       </Nav>
-       </header>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="delivery-date">Preferred Delivery Date*</label>
+            <input type="date" id="delivery-date" name="delivery-date" required>
+          </div>
+          <div class="form-group">
+            <label for="time-slot">Preferred Time Slot*</label>
+            <select id="time-slot" name="time-slot" required>
+              <option value="">-- Select a time slot --</option>
+              <option value="morning">Morning (8am - 12pm)</option>
+              <option value="afternoon">Afternoon (12pm - 4pm)</option>
+              <option value="evening">Evening (4pm - 8pm)</option>
+            </select>
+          </div>
+        </div>
 
-       <section><!--Backgroubd image banner-->
-        <p><i class="fa-solid fa-cart-shopping"></i><br><b>Order Now</b><br>Fill out the form below to place your order</p>
-        <img src="../images/home-page-images/background header.jpeg" alt="" width="100" height="100">
-</section>
+        <div class="form-group">
+          <label for="instructions">Special Instructions (Optional)</label>
+          <textarea id="instructions" name="instructions" placeholder="Any special instructions, house number, etc.?" rows="5"></textarea>
+        </div>
 
-    <body>
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">
+          <i class="fa-solid fa-cart-shopping"></i> <section id="place-order">Place Order</section> 
+        </button>
+        <p class="form-note">By placing an order, you agree to our terms and conditions. We'll contact you to confirm your order and arrange payment.</p>
 
-<section>
+      </form>
+    </div>
 
-    <h2><i class="fa-regular fa-user"></i>Personal Information</h2>
+    <!-- Contact Sidebar -->
+     <section id="request-a-quote">
+    <div class="order-contact">
+      <h3>Need Help with Your Order?</h3>
 
-    <form>
-        <form action="">
-        <label for="full-name">First Name*</label><br>
-        <input type="text" id="full-name" placeholder="Kofi Owusu" name="full-name" required>
+      <div class="contact-item">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <strong>Call Us</strong>
+          <p>+233 243 108 878</p>
+          <p>+233 244 483 793</p>
+          <p>Mon – Sat, 8AM – 8PM</p>
+        </div>
+      </div>
 
-        <label for="telp">Phone Number*</label>
-        <input type="text" id="telp" placeholder="0245678901" name="telp" required><br>
+      <div class="contact-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div>
+          <strong>Email Us</strong>
+          <p>whitewaterwellscompanyltd@gmail.com</p>
+          <p>We'll respond within 24 hours</p>
+        </div>
+      </div>
+    </div>
+    </section>
+  </section>
 
-        <label for="email">Email Address*</label> <br>
-        <input type="email" id="email" placeholder="kofiowusu@gmail.com" name="email" required><br>
-        
-        <h2><i class="fa-solid fa-location-dot"></i>Delivery Address</h2>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/images/home-page-images/Final logo.jpg" alt="Logo">
+        <h2>WHITE WATER WELLS LTD</h2>
+        <p>Pure Water, Pure Life</p>
+      </div>
 
-        <label for="Street Address">Street Address*</label><br>
-        <input type="text" id="Street Address" placeholder="123 Main St" name="Street Address" required><br>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/certification&quality.html">Certificates</a>
+        <a href="/pages/order.html">Order Now</a>      
+      </div>
 
-        <label for="City">City*</label><br>
-        <input type="text" id="City" placeholder="Accra" name="City" required>
-        <label for="GPS">GPS Address*</label>
-        <input type="text" id="GPS" placeholder=" GBC-453-225" name="GPS" required><br>
+      <div class="footer-services">
+        <h3>Services</h3>
+        <p>Delivery</p>
+        <p>Wholesale</p>
+        <p>Retail</p>
+      </div>
 
-        <h2><i class="fa-solid fa-cart-shopping"></i>Order Details</h2>
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Comm 25 Peace B Down, Accra-Prampram Road, P.O. Box 18204, Accra</p>
+        <p><i class="fa-solid fa-map-location-dot"></i> GPS: GN-0709-4736</p>
+        <p><i class="fa-solid fa-phone"></i> +233 243 108 878 / +233 244 483 793</p>
+        <p><i class="fa-solid fa-envelope"></i> whitewaterwellscompanyltd@gmail.com</p>
+      </div>
+    </div>
 
-        <label for="Select Product">Select Product*</label><br>
-        <select id="Select Product" name="Select Product" required>
-            <option value="">--Choose a product...--</option>
-            <option value="Product 1">Sachet Water - 500ml (GH₵7)</option>
-            <option value="Product 2"></option>
-            <option value="Product 3"></option><br>
-        </select><br>
-
-            <Label for="Quantity">Quantity*</Label><br>
-            <input type="number" id="quantity" placeholder="1" name="quantity" min="1" max="100,000" required><br>
-
-            <Label for="Order Type">Order Type*</Label><br>
-        <select id="Order Type" name="Order Type" required>
-            <option value="">--One-time purchase--</option>
-            <option value="One-Time Purchase">One-time purchase</option>
-            <option value="Weekly Subscription">Weekly Subscription (Save 10%)</option>
-            <option value="Bi-Weekly Subscription">Bi-Weekly Subscription (Save 15%)</option>
-             <option value="Monthly Subscription">Monthly Subscription (Save 20%)</option>
-        </select><br>
-
-        <h2><i class="fa-regular fa-calendar"></i>Delivery Schedule</h2>
-        <label for="Preferred Delivery Date">Preferred Delivery Date*</label><br>
-        <input type="date" id="Preferred Delivery Date" name="Preferred Delivery Date" required><br>
-
-        <label for="Preferred Time Slot">Preferred Time Slot*</label><br>
-        <select id="Preferred Time Slot" name="Preferred Time Slot" required>
-            <option value="">--Select a time slot...--</option>
-            <option value="Morning">Morning (8am - 12pm)</option>
-            <option value="Afternoon">Afternoon (12pm - 4pm)</option>
-            <option value="Evening">Evening (4pm - 8pm)</option>
-        </select><br>
-
-        <label for="Special Instructions (Optional)">Special Instructions (Optional)</label><br>
-        <textarea id="Special Instructions (Optional)" name="Special Instructions (Optional)" placeholder="Any special instructions, house number, etc.?" cols="80" rows="10"></textarea>
-
-       </form>
-</section>
-
-   <section>
-    <h4><Button>Place Order</Button> </h4>
-    <p>By placing an order, you agree to our terms and conditions. We'll contact you to confirm your order and arrange payment.</p>
-   </section>
-
-   <section>
-    <h3>Need Help with Your Order?</h3>
-    <p><b>Call Us</b><br><i class="fa-solid fa-phone"></i>Phone: +233 243 108 878 / +233 244 483 793<br>Available: Monday's-Saturday's, 8AM - 8PM</p>
-    <p><br><i class="fa-solid fa-envelope"></i>Email Us<br>whitewaterwellscompanyltd@gmail.com<br>We'll respond within 24 hours</p>
-   </section>
-</body>
-
-<footer>
-
-    <h1><img src="../images/home-page-images/Final logo.jpg" alt="Logo" width="100" height="100">WHITE WATER WELLS LTD</h1>
-    <p>Pure Water, Pure Life</p>
-
-<h2><u>Quick Links</u></h2>
-<p><a href="../index.html">Home</a><br><a href="../pages/about.html">About Us</a><br><a href="../pages/products.html">Products</a><br><a href="../pages/services.html">Services</a><br><a href="../pages/certification&quality.html">Certificates</a><br><a href="../pages/order.html">Order Now</a><br><a href="../pages/login.html">Login</a><br><a href="../pages/sign.html">Sign Up</a></p>
-
-<h3> <u>Services</u></h3>
-<p>Delivery<br>Wholesale<br>Retail</p>
-
-<h4> <u>Contact Info</u></h4>
-<p><i class="fa-solid fa-location-dot"></i>Comm 25 Peace B Down,Accra-Prampram Road,P.O. Box 18204,Accra<br><i class="fa-solid fa-map-location-dot"></i>GPS: GN-0709-4736<br><i class="fa-solid fa-phone"></i>Phone: +233 243 108 878 / +233 244 483 793<br><i class="fa-solid fa-envelope"></i>Email:whitewaterwellscompanyltd@gmail.com</p>
-<hr><p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD.</p>
-
+    <div class="footer-bottom">
+      <p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD. All rights reserved.</p>
+    </div>
   </footer>
+  <script src="/src/script.js"></script>
+</body>
 </html>

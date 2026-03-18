@@ -1,89 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-     <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/src/style.css">
 </head>
-<header> <!---Contaier-->
-<div class="navbar"> <!---Contaier-->
+<body>
 
-  <div class="logo">
-   <img src="../images/home-page-images/Final logo.jpg" alt="" width="100" height="100">
-    <div class="logo-text">
-      <h1>WHITE WATER WELLS LTD</h1>
-      <p>Pure Water. Pure Life. Trusted Quality.</p>
-    </div>
-    </div>
-       
-       <Nav>
-        <a href="../index.html">Home</a>
-        <a href="../pages/about.html">About Us</a>
-        <a href="../pages/products.html">Products</a>
-        <a href="../pages/services.html">Services</a>
-        <a href="../pages/certificates&quality.html">Certificates</a>
-        <a href="../pages/order.html">Order Now</a>
-        <a href="../pages/login.html">Login</a>
-        <a href="../pages/sign.html">Sign Up</a>
-       </Nav>
-       </header>
+  <header>
 
-          <body>
+    <!-- Navbar -->
+    <section class="navbar">
+      <div class="nav-brand">
+        <img src="/images/home-page-images/Final logo.jpg" alt="Logo">
+        <div>
+          <h1>WHITE WATER WELLS LTD</h1>
+          <p>Pure Water, Pure Life</p>
+        </div>
+      </div>
+      <nav class="navlink">
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/certification&quality.html">Certificates</a>
+        <a href="/pages/order.html">Order Now</a>
 
-       <section><!--Login Card-->
-        <h1><i class="fa-solid fa-droplet"></i><br><b>Create Account</b></h1>
-        <p>Join WHITE WATER WELLS LTD today</p>
-      </section>
+        <!-- My Account Dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <i class="fa-regular fa-circle-user"></i> My Account
+            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="/pages/login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            <a href="/pages/sign.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+          </div>
+        </div>
+      </nav>
+    </section>
 
-      <form action="">
-        <i class="fa-regular fa-user"></i>
-        <label for="full-name">Full Name</label><br>
-        <input type="text" id="full-name" placeholder="Kofi Owusu" name="full-name" required><br><br>
+  </header>
 
-        <i class="fa-regular fa-envelope"></i>
-        <label for="email">Email Address</label><br>
-        <input type="email" id="email" placeholder="kofiowusu@gmail.com" name="email" required><br><br>
+  <!-- Sign Up Card -->
+  <section class="auth-section">
+    <div class="auth-card">
 
-        <i class="fa-solid fa-phone"></i>
-        <label for="phone">Phone Number</label><br>
-        <input type="text" id="phone" placeholder="+233 245 678 901" name="phone" required><br>
+      <div class="auth-header">
+        <div class="auth-icon">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+        <h1>Create Account</h1>
+        <p>Join White Water Wells LTD today</p>
+      </div>
 
-        <i class="fa-solid fa-lock"></i>
-        <label for="password">Password</label><br>
-        <input type="password" id="password" placeholder="..........." name="password" required><p>Must be at least 8 characters</p>
+      <form action="" method="POST">
 
-         <i class="fa-solid fa-lock"></i>
-        <label for="confirm-password">Confirm Password</label><br>
-        <input type="password" id="confirm-password" placeholder="..........." name="confirm-password" required><br>
+        <div class="form-group">
+          <label for="full-name">
+            <i class="fa-regular fa-user"></i> Full Name*
+          </label>
+          <input type="text" id="full-name" placeholder="Kofi Owusu" name="full-name" required>
+        </div>
 
-        <input type="checkbox">
-        <label for="remember">I agree to the Terms of Service and Privacy Policy</label><br>
+        <div class="form-group">
+          <label for="email">
+            <i class="fa-regular fa-envelope"></i> Email Address*
+          </label>
+          <input type="email" id="email" placeholder="kofiowusu@gmail.com" name="email" required>
+        </div>
 
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="../pages/login.html">Sign In</a></p>
+        <div class="form-group">
+          <label for="phone">
+            <i class="fa-solid fa-phone"></i> Phone Number*
+          </label>
+          <input type="text" id="phone" placeholder="+233 245 678 901" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">
+            <i class="fa-solid fa-lock"></i> Password*
+          </label>
+          <input type="password" id="password" placeholder="••••••••••" name="password" required>
+          <span class="field-hint">Must be at least 8 characters</span>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">
+            <i class="fa-solid fa-lock"></i> Confirm Password*
+          </label>
+          <input type="password" id="confirm-password" placeholder="••••••••••" name="confirm-password" required>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the Terms of Service and Privacy Policy</label>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <i class="fa-solid fa-user-plus"></i> Create Account
+        </button>
+
+        <p class="auth-switch">
+          Already have an account? <a href="/pages/login.html">Sign In</a>
+        </p>
+
       </form>
 
-   <section>
-    <p>Benefits of creating an account: Track orders, save delivery<br>addresses, manage subscriptions, and get exclusive offers!</p>
-   </section>
-  </body>
+      <div class="auth-benefits">
+        <p><i class="fa-solid fa-circle-check"></i> Track your orders</p>
+        <p><i class="fa-solid fa-circle-check"></i> Save delivery addresses</p>
+        <p><i class="fa-solid fa-circle-check"></i> Manage subscriptions</p>
+        <p><i class="fa-solid fa-circle-check"></i> Get exclusive offers</p>
+      </div>
 
-<footer>
+      <p class="form-note">By creating an account, you agree to our Terms of Service and Privacy Policy</p>
 
-    <h1><img src="../images/home-page-images/Final logo.jpg" alt="Logo" width="100" height="100">WHITE WATER WELLS LTD</h1>
-    <p>Pure Water, Pure Life</p>
+    </div>
+  </section>
 
-<h2><u>Quick Links</u></h2>
-<p><a href="../index.html">Home</a><br><a href="../pages/about.html">About Us</a><br><a href="../pages/products.html">Products</a><br><a href="../pages/services.html">Services</a><br><a href="../pages/certification&quality.html">Certificates</a><br><a href="../pages/order.html">Order Now</a><br><a href="../pages/login.html">Login</a><br><a href="../pages/sign.html">Sign Up</a></p>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/images/home-page-images/Final logo.jpg" alt="Logo">
+        <h2>WHITE WATER WELLS LTD</h2>
+        <p>Pure Water, Pure Life</p>
+      </div>
 
-<h3> <u>Services</u></h3>
-<p>Delivery<br>Wholesale<br>Retail</p>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/certification&quality.html">Certificates</a>
+        <a href="/pages/order.html">Order Now</a>        
+      </div>
 
-<h4> <u>Contact Info</u></h4>
-<p><i class="fa-solid fa-location-dot"></i>Comm 25 Peace B Down,Accra-Prampram Road,P.O. Box 18204,Accra<br><i class="fa-solid fa-map-location-dot"></i>GPS: GN-0709-4736<br><i class="fa-solid fa-phone"></i>Phone: +233 243 108 878 / +233 244 483 793<br><i class="fa-solid fa-envelope"></i>Email:whitewaterwellscompanyltd@gmail.com</p>
-<hr><p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD.</p>
+      <div class="footer-services">
+        <h3>Services</h3>
+        <p>Delivery</p>
+        <p>Wholesale</p>
+        <p>Retail</p>
+      </div>
 
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Comm 25 Peace B Down, Accra-Prampram Road, P.O. Box 18204, Accra</p>
+        <p><i class="fa-solid fa-map-location-dot"></i> GPS: GN-0709-4736</p>
+        <p><i class="fa-solid fa-phone"></i> +233 243 108 878 / +233 244 483 793</p>
+        <p><i class="fa-solid fa-envelope"></i> whitewaterwellscompanyltd@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD. All rights reserved.</p>
+    </div>
   </footer>
+
+</body>
 </html>

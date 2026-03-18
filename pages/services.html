@@ -1,128 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../src/style.css">
-   </head>
-
-<header> <!---Contaier-->
-<div class="navbar"> <!---Contaier-->
-
-  <div class="logo">
-   <img src="../images/home-page-images/Final logo.jpg" alt="" width="100" height="100">
-    <div class="logo-text">
-      <h1>WHITE WATER WELLS LTD</h1>
-      <p>Pure Water. Pure Life. Trusted Quality.</p>
-    </div>
-    </div>
-       
-       <Nav>
-        <a href="../index.html">Home</a>
-        <a href="../pages/about.html">About Us</a>
-        <a href="../pages/products.html">Products</a>
-        <a href="../pages/services.html">Services</a>
-        <a href="../pages/certification&quality.html">Certificates</a>
-        <a href="../pages/order.html">Order Now</a>
-        <a href="../pages/login.html">Login</a>
-        <a href="../pages/sign.html">Sign Up</a>
-       </Nav>
-</header>
-
-       <section><!--Backgroubd image banner-->
-        <p><b>Our Services</b><br>Comprehensive Water Solutions Tailored to Your Needs</p>
-          <img src="../images/home-page-images/background header.jpeg" alt="" width="100" height="100">
-       </section>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <script src="https://kit.fontawesome.com/ac7beb975d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
 <body>
-    <section>
-       <h1>What We Offer</h1>
-       <p>From delivery to testing, we provide complete water solutions for homes and businesses.</p>
+  <header>
+    <!-- Navbar -->
+    <section class="navbar">
+      <div class="nav-brand">
+        <img src="/images/home-page-images/Final logo.jpg" alt="Logo">
+        <div>
+          <h1>WHITE WATER WELLS LTD</h1>
+          <p>Pure Water, Pure Life</p>
+        </div>
+      </div>
+      <nav class="navlink">
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/certification&quality.html">Certificates</a>
+        <a href="/pages/order.html">Order Now</a>
 
-       <h3><i class="fa-regular fa-truck"></i>Home & Office Delivery</h3>
-       <p>Convenient delivery service right to your doorstep.<br>Schedule regular deliveries or order on-demand.</p>
-<ul>
-    <li>Same-day delivery available</li>
-    <li>Scheduled recurring deliveries</li>
-    <li>Free delivery on orders over GH₵1,500</li>
-    <li>Real-time tracking</li>
-</ul>
-
-<h3><i class="fa-regular fa-clock"></i>Subscription Plans</h3>
-<p>Never run out of water with our flexible<br>subscription plans.Save money with auto-delivery.</p>
-<ul>
-    <li>Up to 20% discount</li>
-    <li>Flexible delivery schedule</li>
-    <li>Cancel anytime</li>
-    <li>Priority customer service</li>
-</ul>
-
-<h3><i class="fa-regular fa-headphones"></i>24/7 Customer Support</h3>
-<p>Our dedicated support team is always here to help with orders, delivery, or any questions.</p>
-<ul>
-    <li>Phone support</li>
-    <li>Email assistance</li>
-    <li>Live chat available</li>
-    <li>Quick response time</li>
-</ul>
-
-<h3><i class="fa-solid fa-vial-circle-check"></i>Water Quality Testing</h3>
-<p>Professional water quality testing services for homes and businesses to ensure safety.</p>
-<ul></ul>
-    <li>Comprehensive testing</li>
-    <li>Detailed reports</li>
-    <li>Expert consultation</li>
-    <li>Affordable pricing</li>
-    </ul>
+        <!-- My Account Dropdown -->
+        <div class="dropdown">
+          <button class="dropdown-btn">
+            <i class="fa-regular fa-circle-user"></i> My Account
+            <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="/pages/login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+            <a href="/pages/sign.html"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+          </div>
+        </div>
+      </nav>
     </section>
 
-    <section>
-        <h2>How Our Delivery Service Works</h2>
-        <ol>
-            <li><b>Place Your Order</b><br>Order online or call us directly</li>
-            <li><b>Schedule Delivery</b><br>Choose your preferred delivery time</li>
-            <li><b>We Deliver</b><br>Fast and reliable delivery to your door</li>
-            <li><b>Enjoy Pure Water</b><br>Refresh yourself with premium quality</li>
-        </ol>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Our Services</h1>
+        <p>Comprehensive Water Solutions Tailored to Your Needs</p>
+      </div>
     </section>
+  </header>
 
-    <section>
-        <img src="../images/services-images/Polytanks.jpeg" alt="Polytanks" width="100" height="100">
-        <h2>Business & Corporate Solutions</h2>
-        <p>Keep your employees and clients hydrated with our comprehensive business water solutions. We offer customized packages for offices, restaurants, hotels, and other commercial establishments.</p>
+  <!-- What We Offer -->
+  <section class="section-intro">
+    <h2>What We Offer</h2>
+    <p>From delivery to testing, we provide complete water solutions for homes and businesses.</p>
+  </section>
+
+  <!-- Service Cards -->
+  <section class="why-choose-us">
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <h3>Home & Office Delivery</h3>
+        <p>Convenient delivery service right to your doorstep. Schedule regular deliveries or order on-demand.</p>
         <ul>
-            <li>Volume discounts for bulk orders</li>
-            <li>Dedicated account manager</li>
-            <li>Flexible billing options</li>
-            <li>Customized delivery schedules</li>
+          <li>Same-day delivery available</li>
+          <li>Scheduled recurring deliveries</li>
+          <li>Free delivery on orders over GH₵1,500</li>
+          <li>Real-time tracking</li>
         </ul>
-            <button><a href="../pages/order.html">Request a Quote</a></button>
-    </section>
+      </div>
 
-    <section>
-         <h2>Ready to Experience Pure Quality?</h2>
-<p>Contact us today to learn more about our services or place your first order.</p>
-<p><button><a href="../pages/order.html">Order Now</a></button> <button>Call Us:<a href="tel:+233 243 108 878"> +233 243 108 878</a></button></p>
-</section>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-regular fa-clock"></i>
+        </div>
+        <h3>Subscription Plans</h3>
+        <p>Never run out of water with our flexible subscription plans. Save money with auto-delivery.</p>
+        <ul>
+          <li>Up to 20% discount</li>
+          <li>Flexible delivery schedule</li>
+          <li>Cancel anytime</li>
+          <li>Priority customer service</li>
+        </ul>
+      </div>
 
-</body>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-headphones"></i>
+        </div>
+        <h3>24/7 Customer Support</h3>
+        <p>Our dedicated support team is always here to help with orders, delivery, or any questions.</p>
+        <ul>
+          <li>Phone support</li>
+          <li>Email assistance</li>
+          <li>Live chat available</li>
+          <li>Quick response time</li>
+        </ul>
+      </div>
 
-<footer>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-vial-circle-check"></i>
+        </div>
+        <h3>Water Quality Testing</h3>
+        <p>Professional water quality testing services for homes and businesses to ensure safety.</p>
+        <ul>
+          <li>Comprehensive testing</li>
+          <li>Detailed reports</li>
+          <li>Expert consultation</li>
+          <li>Affordable pricing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <h1><img src="../images/home-page-images/Final logo.jpg" alt="Logo" width="100" height="100">WHITE WATER WELLS LTD</h1>
-    <p>Pure Water, Pure Life</p>
+  <!-- How Delivery Works -->
+  <section class="process-section">
+    <h2>How Our Delivery Service Works</h2>
+    <div class="process-steps">
 
-<h2><u>Quick Links</u></h2>
-<p><a href="../index.html">Home</a><br><a href="../pages/about.html">About Us</a><br><a href="../pages/products.html">Products</a><br><a href="../pages/services.html">Services</a><br><a href="../pages/certification&quality.html">Certificates</a><br><a href="../pages/order.html">Order Now</a><br><a href="../pages/login.html">Login</a><br><a href="../pages/sign.html">Sign Up</a></p>
+      <div class="process-step">
+        <span class="step-number">01</span>
+        <h3>Place Your Order</h3>
+        <p>Order online or call us directly at your convenience.</p>
+      </div>
 
-<h3> <u>Services</u></h3>
-<p>Delivery<br>Wholesale<br>Retail</p>
+      <div class="process-step">
+        <span class="step-number">02</span>
+        <h3>Schedule Delivery</h3>
+        <p>Choose your preferred delivery time and location.</p>
+      </div>
 
-<h4> <u>Contact Info</u></h4>
-<p><i class="fa-solid fa-location-dot"></i>Comm 25 Peace B Down,Accra-Prampram Road,P.O. Box 18204,Accra<br><i class="fa-solid fa-map-location-dot"></i>GPS: GN-0709-4736<br><i class="fa-solid fa-phone"></i>Phone: +233 243 108 878 / +233 244 483 793<br><i class="fa-solid fa-envelope"></i>Email:whitewaterwellscompanyltd@gmail.com</p>
-<hr><p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD.</p>
+      <div class="process-step">
+        <span class="step-number">03</span>
+        <h3>We Deliver</h3>
+        <p>Fast and reliable delivery straight to your door.</p>
+      </div>
 
+      <div class="process-step">
+        <span class="step-number">04</span>
+        <h3>Enjoy Pure Water</h3>
+        <p>Refresh yourself with our premium quality water.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Solutions -->
+  <section class="about-section">
+    <div class="about-image">
+      <img src="/images/services-images/Polytanks.jpeg" alt="Polytanks">
+    </div>
+    <div class="about-content">
+      <h2>Business & Corporate Solutions</h2>
+      <p>Keep your employees and clients hydrated with our comprehensive business water solutions. We offer customized packages for offices, restaurants, hotels, and other commercial establishments.</p>
+      <ul>
+        <li>Volume discounts for bulk orders</li>
+        <li>Dedicated account manager</li>
+        <li>Flexible billing options</li>
+        <li>Customized delivery schedules</li>
+      </ul>
+      <button><a href="/pages/order.html#request-a-quote">Request a Quote</a></button>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Ready to Experience Pure Quality?</h2>
+    <p>Contact us today to learn more about our services or place your first order.</p>
+    <div class="cta-buttons">
+      <button><a href="/pages/order.html#need-help">Order Now</a></button>
+      <button><a href="tel:+233243108878"><i class="fa-solid fa-phone"></i> Call Now</a></button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/images/home-page-images/Final logo.jpg" alt="Logo">
+        <h2>WHITE WATER WELLS LTD</h2>
+        <p>Pure Water, Pure Life</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="/index.html">Home</a>
+        <a href="/pages/about.html">About Us</a>
+        <a href="/pages/products.html">Products</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/certification&quality.html">Certificates</a>
+        <a href="/pages/order.html">Order Now</a>
+        <a href="/pages/login.html">Login</a>
+        <a href="/pages/sign.html">Sign Up</a>
+      </div>
+
+      <div class="footer-services">
+        <h3>Services</h3>
+        <p>Delivery</p>
+        <p>Wholesale</p>
+        <p>Retail</p>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Comm 25 Peace B Down, Accra-Prampram Road, P.O. Box 18204, Accra</p>
+        <p><i class="fa-solid fa-map-location-dot"></i> GPS: GN-0709-4736</p>
+        <p><i class="fa-solid fa-phone"></i> +233 243 108 878 / +233 244 483 793</p>
+        <p><i class="fa-solid fa-envelope"></i> whitewaterwellscompanyltd@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p><i class="fa-regular fa-copyright"></i> 2025 White Water Wells LTD. All rights reserved.</p>
+    </div>
   </footer>
+</body>
 </html>
