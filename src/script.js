@@ -5,3 +5,10 @@ document.getElementById('product').addEventListener('change', function() {
         document.getElementById('quantity').value = '';
       }
     });
+
+// Check URL parameters on page load
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('product') === 'bulk-purchase') {
+  document.getElementById('product').value = 'bulk-purchase';
+  document.getElementById('product').dispatchEvent(new Event('change'));
+}
