@@ -1272,6 +1272,11 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
   margin-bottom: 2px;
 }
+
+@media (max-width: 768px) {
+  #request-a-quote {
+    padding: 50px 24px;
+  }
  
 .contact-row {
     flex-direction: column;
