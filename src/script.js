@@ -1,3 +1,9 @@
+let Username = prompt("Please enter your name:");
+if (Username) {
+  alert(`Welcome, ${Username} back to White Water Wells Ltd!`);
+} else {
+  alert("Welcome, Guest to White Water Wells Ltd we hope you have a great experience!");
+}
 // Bulk-purchase automation
 document.getElementById('product').addEventListener('change', function() {
       if (this.value === 'bulk-purchase') {
