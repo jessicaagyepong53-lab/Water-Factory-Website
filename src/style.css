@@ -1435,6 +1435,81 @@ img { max-width: 100%; display: block; }
   margin-bottom: 24px;
 }
 
+/* ============================================
+   WELCOME MODAL
+   ============================================ */
+.welcome-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 61, 122, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.welcome-modal {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px 36px;
+  width: 380px;
+  max-width: 90vw;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.welcome-modal h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--blue-deep);
+  margin-bottom: 4px;
+}
+
+.welcome-modal label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-mid);
+  text-align: left;
+}
+
+.welcome-modal input,
+.welcome-modal select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-dark);
+  transition: border-color var(--transition);
+}
+
+.welcome-modal input:focus,
+.welcome-modal select:focus {
+  outline: none;
+  border-color: var(--blue-mid);
+}
+
+.welcome-modal button {
+  margin-top: 6px;
+  padding: 12px;
+  background: var(--blue-bright);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.welcome-modal button:hover {
+  background: var(--blue-deep);
+}
+
 .form-check input[type="checkbox"] {
   width: 16px;
   height: 16px;
