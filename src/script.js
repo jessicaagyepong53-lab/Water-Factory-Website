@@ -1,5 +1,5 @@
-// Welcome modal — only on the home page
-if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+// Welcome modal — only on the home page, and only once per session
+if ((window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) && !sessionStorage.getItem('welcomeDone')) {
   (function() {
     const overlay = document.createElement('div');
     overlay.className = 'welcome-overlay';
@@ -27,6 +27,7 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname.
       if (!name) { alert('Please enter your name.'); return; }
       if (!firstTime) { alert('Please select an option.'); return; }
 
+      sessionStorage.setItem('welcomeDone', 'true');
       overlay.remove();
 
       if (firstTime === 'yes') {
