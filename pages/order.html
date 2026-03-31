@@ -176,6 +176,57 @@
       </form>
     </div>
 
+    <!-- Receipt Modal -->
+    <div class="receipt-overlay" id="receipt-overlay">
+      <div class="receipt-modal">
+        <div class="receipt-header">
+          <img src="../images/home-page-images/Final logo.jpg" alt="Logo" class="receipt-logo">
+          <h2>White Water Wells LTD</h2>
+          <p>Pure. Reliable. Refreshing.</p>
+          <span class="receipt-badge">Order Confirmed</span>
+        </div>
+        <div class="receipt-thankyou">
+          <p>Thank you for placing an order with us! Your receipt will be sent to your email. You can also review your order details below.</p>
+        </div>
+        <div class="receipt-id" id="receipt-id"></div>
+        <div class="receipt-body">
+          <div class="receipt-section">
+            <h3><i class="fa-regular fa-user"></i> Personal Information</h3>
+            <div class="receipt-row"><span>Name:</span><span id="r-name"></span></div>
+            <div class="receipt-row"><span>Phone:</span><span id="r-phone"></span></div>
+            <div class="receipt-row"><span>Email:</span><span id="r-email"></span></div>
+          </div>
+          <div class="receipt-section">
+            <h3><i class="fa-solid fa-location-dot"></i> Delivery Address</h3>
+            <div class="receipt-row"><span>Street:</span><span id="r-street"></span></div>
+            <div class="receipt-row"><span>City:</span><span id="r-city"></span></div>
+            <div class="receipt-row"><span>GPS:</span><span id="r-gps"></span></div>
+          </div>
+          <div class="receipt-section">
+            <h3><i class="fa-solid fa-cart-shopping"></i> Order Details</h3>
+            <div class="receipt-row"><span>Product:</span><span id="r-product"></span></div>
+            <div class="receipt-row"><span>Quantity:</span><span id="r-quantity"></span></div>
+            <div class="receipt-row"><span>Order Type:</span><span id="r-order-type"></span></div>
+            <div class="receipt-row" id="r-discount-row" style="display:none"><span>Discount:</span><span id="r-discount"></span></div>
+          </div>
+          <div class="receipt-section">
+            <h3><i class="fa-regular fa-calendar"></i> Delivery Schedule</h3>
+            <div class="receipt-row"><span>Date:</span><span id="r-date"></span></div>
+            <div class="receipt-row"><span>Time Slot:</span><span id="r-time"></span></div>
+            <div class="receipt-row" id="r-instructions-row" style="display:none"><span>Instructions:</span><span id="r-instructions"></span></div>
+          </div>
+          <div class="receipt-total">
+            <span>Total</span>
+            <span id="r-total"></span>
+          </div>
+        </div>
+        <div class="receipt-footer">
+          <button class="receipt-print-btn" id="receipt-print"><i class="fa-solid fa-print"></i> Print Receipt</button>
+          <button class="receipt-close-btn" id="receipt-close"><i class="fa-solid fa-xmark"></i> Close</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Sidebar -->
      <section id="request-a-quote">
   <div class="order-contact">
